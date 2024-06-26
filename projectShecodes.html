@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Earrings</title>
+    <style>
+      .project {
+        padding: 30px;
+        width: 50%;
+        margin: 30px auto;
+        background: linear-gradient(
+          to top,
+          #f3e7e9 0%,
+          #e3eeff 99%,
+          #e3eeff 100%
+        );
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 15px;
+      }
+      h1 {
+        text-align: center;
+        color: #f5a032;
+        margin: 0 auto;
+      }
+      h2 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        max-width: 50%;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 20px 0px 10px;
+      }
+      a {
+        text-decoration: none;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        color: black;
+        margin: 0 auto;
+        margin-top: 20px;
+        background: #f89e28;
+        padding: 10px 25px;
+        border-radius: 20px;
+        transition: 200ms ease-in-out;
+        font-size: 15px;
+        border: none;
+        border: 1px solid #f89e28;
+        box-shadow: #fff 0px 8px 8px 0;
+      }
+      button:hover {
+        color: #f89e28;
+        cursor: pointer;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <h1>Hoop Earrings</h1>
+
+      <h2>Gold hoop my favorite !</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/739/original/1002845959_max.jpg?1708966086"
+      />
+      <p>
+        Hoop earrings can make for a fun statement. We have many different
+        styles, from small gold hoops to large gold hoop earrings. Crafted in
+        precious gold, they add a touch of sass. Enjoy wearing them alone or
+        stacked to create impact and celebrate your own style.
+      </p>
+      <small
+        ><a
+          href="https://bash.com/s?persistentFilter=category-2:jewellery%2Ccategory-3:earrings%2Cearrings:hoop-earrings%2Cmaterial-metal:gold|gold-plated"
+          target="_blank"
+          >See Hoop Earings</a
+        > </small
+      ><br />
+
+      <button>Shop now</button>
+    </div>
+    <script>
+      function shopNow() {
+        let name = prompt("Please fill in your name");
+        let email = prompt("Please fill in your email");
+
+        alert("Thank you" + " " + name + " " + ",We will keep in touch!😊");
+      }
+      let shopNowButton = document.querySelector("button");
+      shopNowButton.addEventListener("click", shopNow);
+    </script>
+  </body>
+</html>
